@@ -3,6 +3,7 @@ package com.carlosvinicyus.sistema_integrado_academico_web_api.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
@@ -19,8 +20,8 @@ public class Nota {
     private MatriculaTurma matriculaTurma;
 
     private String descricao;
-    private Double valor;
-    private Double peso;
+    private BigDecimal valor;
+    private BigDecimal peso;
 
     @Column(name = "data_avaliacao")
     private LocalDate dataAvaliacao;

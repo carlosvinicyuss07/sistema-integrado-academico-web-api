@@ -3,7 +3,7 @@ package com.carlosvinicyus.sistema_integrado_academico_web_api.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -25,7 +25,7 @@ public class ChatMensagem {
     private String conteudo;
 
     @Column(name = "data_envio", insertable = false, updatable = false)
-    private LocalDate dataEnvio;
+    private LocalDateTime dataEnvio;
 
     private Character status = 'A';
 
