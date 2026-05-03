@@ -5,6 +5,7 @@ import com.carlosvinicyus.sistema_integrado_academico_web_api.repository.TurmaRe
 import com.carlosvinicyus.sistema_integrado_academico_web_api.service.ProfessorService;
 import com.carlosvinicyus.sistema_integrado_academico_web_api.service.TurmaService;
 import jakarta.persistence.EntityNotFoundException;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +36,7 @@ public class TurmaServiceImpl implements TurmaService {
     }
 
     @Override
+    @Transactional
     public Turma salvar(Turma turma) {
         if (turma.getProfessor() != null && turma.getProfessor().getId() != null) {
             professorService.buscarPorId(turma.getProfessor().getId());
