@@ -5,9 +5,9 @@ import com.carlosvinicyus.sistema_integrado_academico_web_api.repository.Profess
 import com.carlosvinicyus.sistema_integrado_academico_web_api.service.ProfessorService;
 import com.carlosvinicyus.sistema_integrado_academico_web_api.service.UsuarioService;
 import jakarta.persistence.EntityNotFoundException;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 

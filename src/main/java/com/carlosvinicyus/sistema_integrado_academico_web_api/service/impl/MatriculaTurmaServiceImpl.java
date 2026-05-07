@@ -6,9 +6,9 @@ import com.carlosvinicyus.sistema_integrado_academico_web_api.service.AlunoServi
 import com.carlosvinicyus.sistema_integrado_academico_web_api.service.MatriculaTurmaService;
 import com.carlosvinicyus.sistema_integrado_academico_web_api.service.TurmaService;
 import jakarta.persistence.EntityNotFoundException;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
