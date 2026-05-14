@@ -18,7 +18,7 @@ public interface MatriculaTurmaRepository extends JpaRepository<MatriculaTurma, 
              SELECT COUNT(*)
              FROM academico.matricula_turma
              WHERE turma_id = :turmaId
-               AND situacao = 'MATRICULADO'
+               AND situacao = 'CURSANDO'
                AND status = 'A'
             """,
             nativeQuery = true)
