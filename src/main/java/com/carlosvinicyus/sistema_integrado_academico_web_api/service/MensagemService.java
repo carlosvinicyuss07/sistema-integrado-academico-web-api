@@ -8,4 +8,5 @@ import java.util.List;
 public interface MensagemService {
     List<ChatMensagem> obterHistoricoDoChat(Long chatTurmaId);
     ChatMensagem enviarMensagem(ChatMensagem mensagem);
+    ChatMensagem atualizarStatus(Long id, Character status);
 }

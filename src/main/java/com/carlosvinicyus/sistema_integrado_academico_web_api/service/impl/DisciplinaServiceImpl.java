@@ -2,7 +2,6 @@ package com.carlosvinicyus.sistema_integrado_academico_web_api.service.impl;
 
 import com.carlosvinicyus.sistema_integrado_academico_web_api.model.Disciplina;
 import com.carlosvinicyus.sistema_integrado_academico_web_api.repository.DisciplinaRepository;
-import com.carlosvinicyus.sistema_integrado_academico_web_api.service.CursoService;
 import com.carlosvinicyus.sistema_integrado_academico_web_api.service.DisciplinaService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
