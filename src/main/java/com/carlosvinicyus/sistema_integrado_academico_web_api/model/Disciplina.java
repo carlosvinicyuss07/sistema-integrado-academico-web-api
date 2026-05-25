@@ -15,7 +15,7 @@ public class Disciplina {
     private String nome;
     private String codigo;
 
-    @Column(name = "codigo_suap", unique = true)
+    @Column(name = "codigo_suap", nullable = false, unique = true)
     private String codigoSuap;
 
     @Column(name = "carga_horaria")

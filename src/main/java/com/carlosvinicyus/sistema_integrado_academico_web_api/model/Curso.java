@@ -14,7 +14,7 @@ public class Curso {
 
     private String nome;
 
-    @Column(name = "codigo_suap", unique = true)
+    @Column(name = "codigo_suap", nullable = false, unique = true)
     private String codigoSuap;
 
     private Character status = 'A';

@@ -23,7 +23,7 @@ public class Usuario {
     @Enumerated(EnumType.STRING)
     private PerfilUsuarioEnum perfil;
 
-    @Column(name = "suap_id", unique = true)
+    @Column(name = "suap_id", nullable = false, unique = true)
     private String suapId;
 
     private Character status = 'A'; // A = Ativo, I = Inativo

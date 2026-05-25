@@ -1,6 +1,7 @@
 package com.carlosvinicyus.sistema_integrado_academico_web_api.dto;
 
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import java.time.LocalDate;
@@ -20,6 +21,7 @@ public record FaltaDTO(
 
     String justificativa,
 
+    @NotBlank(message = "O código SUAP é obrigatório")
     @Size(max = 100, message = "O código SUAP deve conter no máximo 100 caracteres")
     String codigoSuap
 ) {}

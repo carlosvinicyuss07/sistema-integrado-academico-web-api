@@ -24,7 +24,7 @@ public class Falta {
     private Integer quantidade = 1;
     private String justificativa;
 
-    @Column(name = "codigo_suap", unique = true)
+    @Column(name = "codigo_suap", nullable = false, unique = true)
     private String codigoSuap;
 
 }
