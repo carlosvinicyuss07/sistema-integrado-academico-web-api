@@ -16,10 +16,10 @@ public class Professor {
     @JoinColumn(name = "usuario_id", nullable = false)
     private Usuario usuario;
 
-    @Column(name = "matricula_siape", unique = true)
+    @Column(name = "matricula_siape", nullable = false, unique = true)
     private String matriculaSiape;
 
-    @Column(name = "suap_id", unique = true)
+    @Column(name = "suap_id", nullable = false, unique = true)
     private String suapId;
 
     private Character status = 'A';

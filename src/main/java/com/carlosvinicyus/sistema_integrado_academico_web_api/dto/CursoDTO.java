@@ -10,6 +10,7 @@ public record CursoDTO(
     @Size(max = 150, message = "O nome do curso deve conter no máximo 150 caracteres")
     String nome,
 
+    @NotBlank(message = "O código SUAP é obrigatório")
     @Size(max = 100, message = "O código SUAP deve conter no máximo 100 caracteres")
     String codigoSuap
 ) {}

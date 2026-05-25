@@ -20,10 +20,10 @@ public class Aluno {
     @JoinColumn(name = "curso_id")
     private Curso curso;
 
-    @Column(unique = true)
+    @Column(name = "matricula", nullable = false, unique = true)
     private String matricula;
 
-    @Column(name = "suap_id", unique = true)
+    @Column(name = "suap_id", nullable = false, unique = true)
     private String suapId;
 
     private Character status = 'A';

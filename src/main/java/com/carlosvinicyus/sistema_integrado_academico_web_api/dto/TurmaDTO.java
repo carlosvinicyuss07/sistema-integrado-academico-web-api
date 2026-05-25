@@ -22,6 +22,7 @@ public record TurmaDTO(
     @Size(max = 150, message = "A descrição deve conter no máximo 150 caracteres")
     String descricao,
 
+    @NotBlank(message = "O código SUAP é obrigatório")
     @Size(max = 100, message = "O código SUAP deve conter no máximo 100 caracteres")
     String codigoSuap
 ) {}
