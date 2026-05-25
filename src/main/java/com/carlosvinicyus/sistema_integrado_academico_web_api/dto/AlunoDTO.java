@@ -18,6 +18,7 @@ public record AlunoDTO(
     @Size(max = 50, message = "A matrícula deve conter no máximo 50 caracteres")
     String matricula,
 
+    @NotBlank(message = "O código SUAP é obrigatório")
     @Size(max = 100, message = "O código SUAP deve conter no máximo 100 caracteres")
     String suapId
 ) {}

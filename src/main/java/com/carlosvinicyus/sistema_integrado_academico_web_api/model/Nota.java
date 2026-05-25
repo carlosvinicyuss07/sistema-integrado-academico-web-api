@@ -26,7 +26,7 @@ public class Nota {
     @Column(name = "data_avaliacao")
     private LocalDate dataAvaliacao;
 
-    @Column(name = "codigo_suap", unique = true)
+    @Column(name = "codigo_suap", nullable = false, unique = true)
     private String codigoSuap;
 
 }
